@@ -52,7 +52,7 @@ opt.timeoutlen = 300
 opt.updatetime = 100
 
 -- Text rendering
-opt.wrap = false
+opt.wrap = true
 
 -- Performance
 opt.lazyredraw = true

@@ -30,6 +30,8 @@ keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
 -- Move text up and down
 keymap.set("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap.set("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+-- Select all
+keymap.set("n", "<C-a>", "gg<S-v>G", opts)
 
 -- Insert mode mappings
 -- Press jk fast to exit insert mode
@@ -63,6 +65,7 @@ keymap.set("n", "<leader>h", ":nohlsearch<CR>", opts)
 -- Split window
 keymap.set("n", "<leader>sv", ":vsplit<CR>", opts)
 keymap.set("n", "<leader>sh", ":split<CR>", opts)
+keymap.set("n", "<leader>sx", ":close<CR>", opts)
 
 -- Close buffer
 keymap.set("n", "<leader>c", ":bdelete<CR>", opts)
@@ -78,3 +81,6 @@ keymap.set({"n", "v"}, "<leader>y", '"+y', opts)
 
 -- Paste from system clipboard
 keymap.set({"n", "v"}, "<leader>p", '"+p', opts)
+
+-- Open Lazy.nvim
+keymap.set("n", "<leader>l", ":Lazy<CR>", opts)
